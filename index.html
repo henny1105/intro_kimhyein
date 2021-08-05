@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포트폴리오 자기소개서</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/e2eac18c71.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script defer src="main.js"></script>
+    <script src="form.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="inner">
+            <h1><a href="index.html">PORTFOLIO</a></h1>
+            <ul class="menu">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about2">ABOUT</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="home" class="myScroll">
+        <div class="inner">
+            <div class="left">
+                <video src="vid/vid1.mp4" controls="" autoplay="" loop="" muted=""></video>
+            </div>
+            <div class="right">
+                <div class="txt">
+                    <span>안녕하세요! <br>저는 <strong>김혜인</strong>입니다.</span>
+                <h2>UI/UX Designer & Front-End Developer</h2>
+                <p> <strong>"저는 새로운 것을 배우는 것을 좋아합니다!"</strong><br><br>
+                    하루가 다르게 언어 및 IT트렌드가 바뀌고 있기 때문에 <br>지속적으로 이 흐름을 파악하여, 개발역량을 키워야 한다고 생각합니다.
+                    <br>
+                    이 트렌드의 흐름을 놓치지 않고 스스로 개선사항을 만들고 실천하며 항상 발전하는 웹 퍼블리셔가 되도록 노력하겠습니다! </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about" class="myScroll">
+        <div class="inner">
+            <h1 class="h">ABOUT</h1>
+            <div class="content_box">
+                <article class="content1">
+                    <h2>PROFILE</h2>
+                    <table summary="이름, 생년월일, 전화번호, 이메일">
+                        <caption class="h">프로필</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col" class="h">이름</th>
+                                <th scope="col" class="h">생년월일</th>
+                                <th scope="col" class="h">전화번호</th>
+                                <th scope="col" class="h">이메일</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>김혜인</td>
+                            </tr>
+                            <tr>
+                                <td>1993. 11. 05</td>
+                            </tr>
+                            <tr>
+                                <td>010-8933-3150</td>
+                            </tr>
+                            <tr>
+                                <td>kimhyein1105@gmail.com</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+                <article class="content2">
+                    <h2>EDUCATION</h2>
+                    <table summary="회사경력사항 및 학원수료내역">
+                        <caption class="h">경력사항</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col" class="h">기간</th>
+                                <th scope="col" class="h">상세내용</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2021.02-07</td>
+                                <td>디코드컴퓨터학원 <br>'UI/UX 웹퍼블리셔 취업과정'<br> 수료</td>
+                            </tr>
+                            <tr>
+                                <td>2012.02-2020.01</td>
+                                <td>LG Hellovision 렌탈사업팀</td>
+                            </tr>
+                            <tr>
+                                <td>2015.03-2019.02</td>
+                                <td>중앙대학교 지식경영학부 졸업</td>
+                            </tr>
+                            <tr>
+                                <td>2009.03-2012.02</td>
+                                <td>서울여자상업고등학교 졸업</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </article>
+                <article class="content3">
+                    <h2>LICENSE</h2>
+                    <table summary="자격증 취득 내역">
+                        <caption class="h">자격증</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col" class="h">기간</th>
+                                <th scope="col" class="h">경력사항</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2020.12</td>
+                                <td>JPLT N2</td>
+                            </tr>
+                            <tr>
+                                <td>2010.12</td>
+                                <td>MOS Master<br>(word, powerpoint, excel)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+                <article class="content4">
+                    <h2>SKILL</h2>
+                    <div class="skill_content_box">
+                        <div class="top">
+                            <article>
+                                <i class="fab fa-html5"></i>
+                                <p>HTML</p>
+                            </article>
+                            <article>
+                                <i class="fab fa-css3-alt"></i>
+                                <p>CSS</p>
+                            </article>
+                            <article>
+                                <i class="fab fa-js"></i>
+                                <p>JavaScript</p>
+                            </article>
+                            <article>
+                                <img src="img/jquery.gif" alt="제이쿼리_아이콘">
+                                <p>JQuery</p>
+                            </article>
+                        </div>
+                        <div class="bottom">
+
+                            <article>
+                                <i class="fab fa-sass"></i>
+                                <p>SCSS</p>
+                            </article>
+                            <article>
+                                <i class="fab fa-gulp"></i>
+                                <p>Gulp</p>
+                            </article>
+                            <article>
+                                <img src="img/photoshop.png" alt="포토샵_아이콘">
+                                <p>Photoshop</p>
+                            </article>
+                            <article>
+                                <img src="img/adobexd.png" alt="어도비XD_아이콘">
+                                <p>Adobe XD</p>
+                            </article>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="myScroll">
+        <div class="inner">
+            <h1>제가 만든 포트폴리오를 소개할게요!</h1>
+            <p>기업형 포트폴리오, 라이브러리를 활용한 포트폴리오가 있어요!</p>
+            <div class="enterprise">
+                <div class="left">
+                    <div class="content1">
+                        <h2>기업형 포트폴리오</h2>
+                        <div class="tech_desc">
+                            <div class="top">
+                                <article>
+                                    <i class="fab fa-sass"></i>
+                                    <h3>SCSS</h3>
+                                    <p>CSS코드의 간결화를 위한 SCSS 사용</p>
+                                </article>
+                                <article>
+                                    <i class="fas fa-tablet-alt"></i>
+                                    <h3>반응형 레이아웃</h3>
+                                    <p>모든 기기에서 최적화된 화면을 제공하기 위해 반응형 적용</p>
+                                </article>
+                                <article>
+                                    <i class="fas fa-network-wired"></i>
+                                    <h3>JSON</h3>
+                                    <p>서버와 클라이언트 간의 교류를 위한 JSON 활용 게시판 정보 호출</p>
+                                </article>
+                            </div>
+                            <div class="bottom">
+                                <article>
+                                    <i class="fab fa-gulp"></i>
+                                    <h3>Gulp</h3>
+                                    <p>효율적인 프로젝트 관리를 위해 영역별로 폴더 구성하여 Gulp 사용</p>
+                                </article>
+                                <article>
+                                    <i class="fas fa-laptop-code"></i>
+                                    <h3>Plugin</h3>
+                                    <p>프로젝트에서 반복되는 기능을 prototype 객체지향형 Plugin으로 제작</p>
+                                </article>
+                                <article>
+                                    <i class="fas fa-key"></i>
+                                    <h3>REST API</h3>
+                                    <p>Youtube, Flickr, kakaomap 등 API Key를 이용하여 미디어 호출</p>
+                                </article>
+                            </div>
+                        </div>
+                        <ul>
+                            <li><a href="https://henny1105.github.io/portfolio_gulp_kimhyein/dist/"
+                                    target="_blank">포트폴리오 연결하기</a></li>
+                            <li><a href="file/기업형포트폴리오_작업설명서_김혜인.xd" target="_blank">작업설명서 연결하기(XD버전) ></a></li>
+                            <li><a href="file/기업형포트폴리오_작업설명서_김혜인.pdf" target="_blank">작업설명서 연결하기(PDF버전) ></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="pic"></div>
+                </div>
+            </div>
+            <div class="second">
+                <div class="swiper">
+                    <div class="pic"></div>
+                    <h2>Swiper 포트폴리오</h2>
+                    <p>슬라이더를 구현하는 라이브러리 'Swiper'를 이용하여 웹 페이지 제작</p>
+                    <a href="https://henny1105.github.io/portfolio_swiper/" target="_blank">포트폴리오 연결하기</a>
+                </div>
+                <div class="isotope">
+                    <div class="pic"></div>
+                    <h2>Isotope 포트폴리오</h2>
+                    <p>레이아웃과 필터에 애니메이션 효과를 줄 수 있는 라이브러리 'Isotope'을 이용하여 웹 페이지 제작 </p>
+                    <a href="https://henny1105.github.io/portfolio_istope/" target="_blank">포트폴리오 연결하기</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="myScroll">
+        <div class="inner">
+            <div class="left">
+                <div class="content">
+                    <h1>저에게 편하게 연락주세요!</h1>
+                    <form id="contact-form">
+                        <input type="hidden" name="contact_number">
+                        <input type="text" required placeholder="이름" name="to_name">
+                        <input type="email" required placeholder="이메일주소" name="from_name">
+                        <input type="text" required placeholder="핸드폰번호" name="contact">
+                        <input type="text" required placeholder="소속">
+                        <textarea cols="30" rows="10" required placeholder="문의내용을 입력하세요*" name="message_html"></textarea>
+                        <input type="submit" value="전송하기">
+                    </form>
+                </div>
+            </div>
+            <div class="right">
+                <article class="top"></article>
+                <article class="bottom">
+                    <h3>
+
+                        <span><strong>휴대폰</strong> 010-8933-3150</span>
+                    </h3>
+                    <h3>
+                        <span><strong>이메일</strong> kimhyein1105@gmail.com</span>
+                    </h3>
+                    <h3>
+                        <span><strong>카카오톡</strong>kimhi1105</span>
+                    </h3>
+                    
+                    <a href="file/이력서_김혜인.pdf" target="_blank">이력서 다운받기</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+
+    </footer>
+
+    <ul id="navi">
+        <li><a href="#home" class="on"></a></li>
+        <li><a href="#about"></a></li>
+        <li><a href="#portfolio"></a></li>
+        <li><a href="#contact"></a></li>
+    </ul>
+</body>
+
+</html>
