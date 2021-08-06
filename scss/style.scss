@@ -156,7 +156,7 @@
                 }
 
                 h2 {
-                    font: bold 35px/1 'Noto Sans KR';
+                    font: bold 30px/1 'Noto Sans KR';
                     color: #111;
                     margin-bottom: 40px;
                 }
@@ -326,7 +326,7 @@
                 .pic {
                     width: 100%;
                     height: 100%;
-                    background: url(../img/mainpage.png) no-repeat center/cover;
+                    background: url(../img/mainpage.png) no-repeat top/cover;
                 object-fit: cover;
                 }
             }
@@ -470,7 +470,7 @@
                 .pic {
                     width: 100%;
                     height: 100%;
-                    background: url(../img/swiper.png) no-repeat center/cover;
+                    background: url(../img/swiper.png) no-repeat top/cover;
                     object-fit: cover;
                 }
                 
@@ -489,7 +489,7 @@
                 .pic {
                     width: 100%;
                     height: 100%;
-                    background: url(../img/isotope.png) no-repeat center/cover;
+                    background: url(../img/isotope.png) no-repeat top/cover;
                     object-fit: cover;
                 }
             }
