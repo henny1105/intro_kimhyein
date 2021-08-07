@@ -1,3 +1,5 @@
+// scroll 모션
+
 var $btns = $("#navi li"); 
 var $boxs = $(".myScroll"); 
 var len = $btns.length; 
@@ -46,3 +48,13 @@ function moveScroll(el){
          scrollTop: targetPos
      }, 1000); 
 }
+
+
+// btnCall
+var btnCall = document.querySelector(".btnCall");
+var menuMo = document.querySelector(".menuMo");
+
+btnCall.onclick = function(){
+    btnCall.classList.toggle("on");
+    menuMo.classList.toggle("on");
+} 

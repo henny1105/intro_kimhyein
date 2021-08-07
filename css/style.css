@@ -49,22 +49,102 @@ button {
         font: bold 30px/1 'Noto Serif KR';
         font-weight: 600;
         color: #111; }
-    #header .inner .menu {
+    #header .inner .menuWeb .gnb {
       float: right; }
-      #header .inner .menu li {
+      #header .inner .menuWeb .gnb li {
         float: left;
         margin-right: 40px; }
-        #header .inner .menu li:last-child {
+        #header .inner .menuWeb .gnb li:last-child {
           margin-right: 0; }
-        #header .inner .menu li a {
+        #header .inner .menuWeb .gnb li a {
           font: 18px/1 'Montserrat';
           font-weight: 600;
           color: #111; }
-    #header .inner .sns_menu {
-      float: right; }
-      #header .inner .sns_menu li {
-        float: left;
-        margin-right: 10px; }
+    #header .inner .menuWeb .btn_content {
+      position: absolute;
+      right: 26px;
+      top: 22px;
+      display: none; }
+      #header .inner .menuWeb .btn_content .btnCall {
+        display: block;
+        width: 20px;
+        height: 20px;
+        position: relative; }
+        #header .inner .menuWeb .btn_content .btnCall span {
+          display: block;
+          width: 100%;
+          height: 2px;
+          background: #000;
+          position: absolute;
+          top: 50%;
+          left: 0;
+          margin-top: -1px;
+          transition: all 0.5s;
+          text-indent: -9999px; }
+        #header .inner .menuWeb .btn_content .btnCall::before {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 2px;
+          background: #000;
+          position: absolute;
+          top: 0;
+          left: 0;
+          transition: top 0.5s 0s, transform 0.5s 0.5s; }
+        #header .inner .menuWeb .btn_content .btnCall::after {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 2px;
+          background: #000;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          transition: bottom 0.5s 0s, transform 0.5s 0.5s; }
+        #header .inner .menuWeb .btn_content .btnCall.on::before {
+          transform: rotate(45deg);
+          top: calc(50% - 1px); }
+        #header .inner .menuWeb .btn_content .btnCall.on::after {
+          transform: rotate(-45deg);
+          bottom: calc(50% - 1px); }
+        #header .inner .menuWeb .btn_content .btnCall.on span {
+          transform: translateX(100%);
+          opacity: 0; }
+    #header .inner .menuMo {
+      position: fixed;
+      top: 0;
+      left: -350px;
+      width: 350px;
+      height: 100%;
+      background: #efefef;
+      z-index: 10;
+      display: none;
+      transition: all 0.5s;
+      padding: 30px; }
+      #header .inner .menuMo h1 {
+        margin-bottom: 30px; }
+        #header .inner .menuMo h1 a {
+          color: #111;
+          display: block;
+          text-align: center;
+          font: bold 24px/1 'Noto Serif KR';
+          margin-bottom: -12px; }
+      #header .inner .menuMo .gnbMo {
+        margin-top: 30px; }
+        #header .inner .menuMo .gnbMo li a {
+          display: inline-block;
+          width: 100%;
+          padding: 20px 0;
+          border-bottom: 1px solid #ccc;
+          font: 15px/1 'Montserrat';
+          color: #222;
+          text-align: left; }
+          #header .inner .menuMo .gnbMo li a i {
+            font-size: 15px;
+            color: #333;
+            margin-right: 20px; }
+      #header .inner .menuMo.on {
+        left: 0%; }
 
 #home .inner {
   display: flex;
@@ -406,12 +486,12 @@ button {
           margin-bottom: 20px;
           padding: 10px;
           font: 14px/1 'Noto Sans KR';
-          color: #555;
-          cursor: pointer; }
+          color: #555; }
         #contact .inner .left .content input[type=submit] {
           background: #ccc;
           border-radius: 5px;
-          transition: all 0.5s; }
+          transition: all 0.5s;
+          cursor: pointer; }
           #contact .inner .left .content input[type=submit]:hover {
             background: #ddd; }
         #contact .inner .left .content textarea {
@@ -465,7 +545,8 @@ button {
   position: fixed;
   right: 50px;
   top: 50%;
-  transform: translateY(-50%); }
+  transform: translateY(-50%);
+  z-index: 10; }
   #navi li {
     margin: 20px 0; }
     #navi li a {
@@ -478,5 +559,134 @@ button {
       #navi li a.on {
         background: #8d8a8d;
         height: 40px; }
+
+@media screen and (max-width: 1179px) {
+  #header {
+    width: 100%; }
+    #header .inner {
+      padding: 30px 40px; }
+
+  #home .inner .left {
+    width: 50%; }
+  #home .inner .right {
+    width: 50%; }
+
+  #about {
+    padding-top: 20px; }
+    #about .inner .content_box {
+      display: block; }
+      #about .inner .content_box > article {
+        width: 100%;
+        height: 350px;
+        margin-bottom: 10px; }
+
+  #navi {
+    position: fixed;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%); }
+    #navi li {
+      margin: 20px 0; }
+      #navi li a {
+        display: block;
+        width: 10px;
+        height: 10px;
+        background: #ccc;
+        border-radius: 5px;
+        transition: 0.5s; }
+        #navi li a.on {
+          background: #8d8a8d;
+          height: 40px; } }
+@media screen and (max-width: 539px) {
+  #header {
+    width: 100%; }
+    #header .inner {
+      padding: 20px; }
+      #header .inner h1 a {
+        font: bold 25px/1 'Noto Serif KR'; }
+      #header .inner .menuWeb .gnb {
+        display: none; }
+      #header .inner .menuWeb .btn_content {
+        display: block;
+        position: absolute;
+        top: 35px; }
+      #header .inner .menuMo {
+        display: block; }
+
+  #home .inner {
+    display: flex;
+    flex-direction: column; }
+    #home .inner .left {
+      width: 100%; }
+      #home .inner .left video {
+        width: 100%;
+        height: 30vh;
+        object-fit: cover; }
+    #home .inner .right {
+      width: 100%;
+      height: 45vh;
+      padding: 40px; }
+
+  #about {
+    padding-top: 20px; }
+    #about .inner .content_box {
+      display: block; }
+      #about .inner .content_box > article {
+        width: 100%;
+        height: 350px;
+        margin-bottom: 10px; }
+
+  #portfolio .inner > h2 {
+    padding-top: 80px;
+    font: bold 30px/1 'Noto Sans KR'; }
+  #portfolio .inner > p {
+    font: 18px/1 'Noto Sans KR';
+    margin-bottom: 80px; }
+  #portfolio .inner .content1 {
+    display: flex;
+    flex-direction: column; }
+    #portfolio .inner .content1 .left {
+      width: 100%;
+      height: 40vh;
+      padding: 40px; }
+    #portfolio .inner .content1 .right {
+      width: 100%;
+      padding: 40px; }
+  #portfolio .inner .content2 {
+    display: flex;
+    flex-direction: column-reverse; }
+    #portfolio .inner .content2 .left {
+      width: 100%;
+      padding: 40px; }
+    #portfolio .inner .content2 .right {
+      width: 100%;
+      height: 40vh;
+      padding: 40px; }
+  #portfolio .inner .content3 {
+    display: flex;
+    flex-direction: column; }
+    #portfolio .inner .content3 .left {
+      width: 100%;
+      height: 40vh;
+      padding: 40px; }
+    #portfolio .inner .content3 .right {
+      width: 100%;
+      padding: 40px; }
+
+  #contact .inner {
+    display: flex;
+    flex-direction: column; }
+    #contact .inner .left {
+      width: 100%;
+      height: 62vh;
+      padding: 60px; }
+      #contact .inner .left .content input {
+        width: 100%; }
+    #contact .inner .right {
+      width: 100%;
+      height: 60vh; }
+
+  #navi {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */
