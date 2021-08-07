@@ -5,8 +5,7 @@
 
 window.onload = function() {
     var form = document.getElementById("contact-form");
-    console.log(form);
-
+    
     form.addEventListener('submit', function(e) {
         e.preventDefault();
 
