@@ -12,7 +12,6 @@ window.onload = function() {
         // 고유 contact 숫자 랜덤하게 생성
         this.contact_number.value = Math.random() * 100000 | 0;
 
-
         emailjs
             .sendForm('service_f4ekagn', 'template_w4msy4i', this) //serviceID, templateID입력
             .then(

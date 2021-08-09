@@ -163,22 +163,9 @@ button {
   #home .inner .right {
     width: 50%;
     height: 500px;
-    background: url(../img/bg0.jpg) no-repeat center/cover;
+    background: #efefef;
     object-fit: cover;
-    padding: 80px;
-    position: relative;
-    z-index: 1; }
-    #home .inner .right::after {
-      display: block;
-      content: '';
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 2;
-      background-color: rgba(255, 255, 255, 0.95);
-      z-index: 2; }
+    padding: 80px; }
     #home .inner .right .txt {
       position: relative;
       z-index: 3; }
@@ -457,7 +444,7 @@ button {
       #contact .inner .left .content {
         position: relative;
         z-index: 3; }
-        #contact .inner .left .content h1 {
+        #contact .inner .left .content h2 {
           font: bold 30px/1 'Noto Sans KR';
           margin-bottom: 50px; }
         #contact .inner .left .content input {
@@ -521,6 +508,19 @@ button {
             border: 1px solid #0077ed;
             background: #fff;
             color: #0077ed; }
+
+#footer {
+  width: 100%;
+  height: 70px;
+  background: #333;
+  position: relative; }
+  #footer p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font: 14px/1 'Open Sans';
+    color: #fff; }
 
 #navi {
   position: fixed;
