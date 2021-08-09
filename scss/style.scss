@@ -376,13 +376,23 @@
                 h2 {
                     font: bold 30px/1 'Noto Sans KR';
                     color: #222;
-                    margin-bottom: 20px;
+                    margin-bottom: 40px;
                     margin-top: 20px;
                 }
 
                 p {
                     font: 17px/1.5 'Noto Sans KR';
                     color: #444;
+
+                    &:nth-of-type(1) {
+                        margin-bottom: 15px;
+                    }
+
+                    &:nth-of-type(2) {
+                        font: 15px/1.5 'Noto Sans KR';
+                        font-weight: 300;
+                        color: #666;
+                    }
                 }
 
                 ul {
@@ -460,13 +470,23 @@
                 h2 {
                     font: bold 30px/1 'Noto Sans KR';
                     color: #222;
-                    margin-bottom: 20px;
+                    margin-bottom: 40px;
                     margin-top: 20px;
                 }
 
                 p {
                     font: 17px/1.5 'Noto Sans KR';
                     color: #444;
+
+                    &:nth-of-type(1) {
+                        margin-bottom: 15px;
+                    }
+
+                    &:nth-of-type(2) {
+                        font: 15px/1.5 'Noto Sans KR';
+                        font-weight: 300;
+                        color: #666;
+                    }
                 }
 
                 a {
@@ -532,13 +552,23 @@
                 h2 {
                     font: bold 30px/1 'Noto Sans KR';
                     color: #222;
-                    margin-bottom: 20px;
+                    margin-bottom: 40px;
                     margin-top: 20px;
                 }
 
                 p {
                     font: 17px/1.5 'Noto Sans KR';
                     color: #444;
+                    
+                    &:nth-of-type(1) {
+                        margin-bottom: 15px;
+                    }
+
+                    &:nth-of-type(2) {
+                        font: 15px/1.5 'Noto Sans KR';
+                        font-weight: 300;
+                        color: #666;
+                    }
                 }
 
                 a {
