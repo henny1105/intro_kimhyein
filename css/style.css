@@ -153,10 +153,12 @@ button {
   justify-content: center;
   flex-direction: row; }
   #home .inner .left {
-    width: 50%; }
-    #home .inner .left video {
+    width: 50%;
+    height: 500px; }
+    #home .inner .left .pic {
       width: 100%;
-      height: 500px;
+      height: 100%;
+      background: url(../img/bg3.jpg) no-repeat center/cover;
       object-fit: cover; }
   #home .inner .right {
     width: 50%;
@@ -518,8 +520,7 @@ button {
       border-radius: 5px;
       transition: 0.5s; }
       #navi li a.on {
-        background: #8d8a8d;
-        height: 40px; }
+        background: #838183; }
 
 @media screen and (max-width: 1599px) {
   #about .inner .right .bottom .skill .content {
@@ -661,9 +662,10 @@ button {
     text-align: center; }
     #portfolio .inner .txt > h2 {
       font: bold 30px/1 'Noto Sans KR';
-      margin-bottom: 30px; }
+      padding-top: 0; }
     #portfolio .inner .txt > p {
-      font: 16px/1.2 'Noto Sans KR'; }
+      font: 16px/1.2 'Noto Sans KR';
+      margin-bottom: 0; }
   #portfolio .inner .content1 {
     display: flex;
     flex-direction: column; }
@@ -700,7 +702,7 @@ button {
     flex-direction: column; }
     #contact .inner .left {
       width: 100%;
-      height: 70vh;
+      height: 78vh;
       padding: 40px; }
       #contact .inner .left .content input {
         width: 100%; }

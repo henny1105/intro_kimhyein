@@ -178,10 +178,12 @@
 
         .left {
             width: 50%;
+            height: 500px;
 
-            video {
+            .pic {
                 width: 100%;
-                height: 500px;
+                height: 100%;
+                background: url(../img/bg3.jpg) no-repeat center/cover;
                 object-fit: cover;
             }
         }
@@ -708,8 +710,7 @@
             transition: 0.5s;
 
             &.on {
-                background: #8d8a8d;
-                height: 40px;
+                background: #838183;
             }
         }
     }
@@ -978,11 +979,12 @@
 
                 >h2 {
                     font: bold 30px/1 'Noto Sans KR';
-                    margin-bottom: 30px;
+                    padding-top: 0;
                 }
     
                 >p {
                     font: 16px/1.2 'Noto Sans KR';
+                    margin-bottom: 0;
                 }
             }
 
@@ -1016,7 +1018,6 @@
                     width: 100%;
                     height: 40vh;
                     padding: 40px;
-
                 }
             }
 
@@ -1045,7 +1046,7 @@
 
             .left {
                 width: 100%;
-                height: 70vh;
+                height: 78vh;
                 padding: 40px;
 
                 .content {
