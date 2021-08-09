@@ -52,6 +52,7 @@
                 right: 26px;
                 top: 22px;
                 display: none;
+                z-index: 11;
 
                 .btnCall {
                     display: block;
@@ -117,8 +118,8 @@
         .menuMo {
             position: fixed;
             top: 0;
-            left: -350px;
-            width: 350px;
+            left: -300px;
+            width: 300px;
             height: 100%;
             background: #efefef;
             z-index: 10;
@@ -323,21 +324,23 @@
         display: flex;
         flex-direction: column;
 
-        >h2 {
-            padding-top: 100px;
-            font: 40px/1 'Noto Sans KR';
-            font-weight: 600;
-            text-align: center;
-            color: #111;
-            letter-spacing: 2px;
-            margin-bottom: 20px;
-        }
-
-        >p {
-            font: 20px/1 'Noto Sans KR';
-            color: #555;
-            text-align: center;
-            margin-bottom: 100px;
+        .txt {
+            >h2 {
+                padding-top: 100px;
+                font: 40px/1 'Noto Sans KR';
+                font-weight: 600;
+                text-align: center;
+                color: #111;
+                letter-spacing: 2px;
+                margin-bottom: 20px;
+            }
+    
+            >p {
+                font: 20px/1 'Noto Sans KR';
+                color: #555;
+                text-align: center;
+                margin-bottom: 100px;
+            }
         }
 
         .content1 {
@@ -761,7 +764,7 @@
 
             .left {
                 width: 100%;
-                height: 45vh;
+                height: 40vh;
                 padding: 0;
 
                 .pic {
@@ -784,6 +787,41 @@
                         }
                     }
                 }
+            }
+        }
+    }
+
+    #portfolio {
+        .inner {
+            .content1 {
+                .right {
+                    padding: 50px;
+                }
+            }
+
+            .content2 {
+                .left {
+                    padding: 50px;
+                }
+            }
+
+            .content3 {
+                .right {
+                    padding: 50px;
+                }
+            }
+        }
+    }
+
+    #contact {
+        .inner {
+            .left {
+                padding: 50px;
+                height: 500px;
+            }
+            
+            .right {
+                height: 500px;
             }
         }
     }
@@ -934,14 +972,18 @@
 
     #portfolio {
         .inner {
-            >h2 {
-                padding-top: 80px;
-                font: bold 30px/1 'Noto Sans KR';
-            }
+            .txt {
+                padding: 50px 30px 30px;
+                text-align: center;
 
-            >p {
-                font: 18px/1 'Noto Sans KR';
-                margin-bottom: 80px;
+                >h2 {
+                    font: bold 30px/1 'Noto Sans KR';
+                    margin-bottom: 30px;
+                }
+    
+                >p {
+                    font: 16px/1.2 'Noto Sans KR';
+                }
             }
 
             .content1 {
@@ -1003,7 +1045,7 @@
 
             .left {
                 width: 100%;
-                height: 82vh;
+                height: 70vh;
                 padding: 40px;
 
                 .content {
