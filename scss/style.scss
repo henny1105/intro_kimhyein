@@ -16,7 +16,6 @@
         padding: 40px 120px 30px;
         margin: 0 auto;
 
-
         h1 {
             display: inline-block;
 
@@ -227,7 +226,6 @@
         display: flex;
         flex-direction: row;
 
-
         .left {
             width: 35%;
             padding: 50px;
@@ -334,6 +332,8 @@
             display: flex;
             flex-direction: row;
             background: #eee;
+            opacity: 0;
+            transition: 0.5s;
 
             .left {
                 width: 50%;
@@ -441,6 +441,8 @@
         .content2 {
             display: flex;
             flex-direction: row;
+            opacity: 0;
+            transition: 0.5s;
 
             .left {
                 width: 50%;
@@ -511,6 +513,8 @@
             display: flex;
             flex-direction: row;
             background: #eee;
+            opacity: 0;
+            transition: 0.5s;
 
             .left {
                 width: 50%;
@@ -574,6 +578,16 @@
                         color: #0077ed;
                     }
                 }
+            }
+        }
+    }
+
+    &.on {
+        .inner {
+            .content1,
+            .content2,
+            .content3 {
+                opacity: 1;
             }
         }
     }

@@ -256,7 +256,9 @@ button {
     #portfolio .inner .content1 {
       display: flex;
       flex-direction: row;
-      background: #eee; }
+      background: #eee;
+      opacity: 0;
+      transition: 0.5s; }
       #portfolio .inner .content1 .left {
         width: 50%;
         padding: 50px; }
@@ -322,7 +324,9 @@ button {
                   text-decoration: underline; }
     #portfolio .inner .content2 {
       display: flex;
-      flex-direction: row; }
+      flex-direction: row;
+      opacity: 0;
+      transition: 0.5s; }
       #portfolio .inner .content2 .left {
         width: 50%;
         padding: 100px; }
@@ -370,7 +374,9 @@ button {
     #portfolio .inner .content3 {
       display: flex;
       flex-direction: row;
-      background: #eee; }
+      background: #eee;
+      opacity: 0;
+      transition: 0.5s; }
       #portfolio .inner .content3 .left {
         width: 50%;
         padding: 50px; }
@@ -415,6 +421,10 @@ button {
             border: 1px solid #0077ed;
             background: #fff;
             color: #0077ed; }
+  #portfolio.on .inner .content1,
+  #portfolio.on .inner .content2,
+  #portfolio.on .inner .content3 {
+    opacity: 1; }
 
 #contact {
   width: 100%; }
