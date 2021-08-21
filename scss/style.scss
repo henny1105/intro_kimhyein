@@ -7,29 +7,28 @@
 
 #header {
     width: 100%;
+    background: #efefef65;
 
     .inner {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        padding: 40px 120px 30px;
+        padding: 20px 120px 20px;
         margin: 0 auto;
 
         h1 {
             display: inline-block;
 
             a {
-                font: bold 30px/1 'Noto Serif KR';
-                font-weight: 600;
+                font: 25px/1 'Open Sans';
+                font-weight: 700;
                 color: #111;
             }
         }
 
         .menuWeb {
             .gnb {
-                float: right;
-
                 li {
                     float: left;
                     margin-right: 40px;
@@ -39,9 +38,14 @@
                     }
 
                     a {
-                        font: 18px/1 'Montserrat';
+                        font: 15px/1 'Montserrat';
                         font-weight: 600;
                         color: #111;
+                        transition: 0.5s;
+
+                        &:hover {
+                            color: #b3aaa3;
+                        }
                     }
                 }
             }
@@ -169,10 +173,10 @@
 }
 
 #home {
+    border-top: 1px solid #eee;
+
     .inner {
         display: flex;
-        align-content: center;
-        justify-content: center;
         flex-direction: row;
 
         .left {
@@ -190,10 +194,24 @@
         .right {
             width: 50%;
             height: 500px;
-            background: #efefef;
             object-fit: cover;
             padding: 80px;
+            background: url(../img/bg4.jpg) no-repeat center/cover;
+            position: relative;
+            
 
+            &::after {
+                display: block;
+                content: '';
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 2;
+                background-color: rgba(251, 251, 251, 0.92);
+            }
+        
             .txt {
                 position: relative;
                 z-index: 3;
@@ -208,10 +226,14 @@
                 }
 
                 p {
-                    font: 16px/1.5 'Noto Sans KR';
+                    font: 15px/1.5 'Noto Sans KR';
                     font-weight: 300;
                     color: #222;
                     margin-top: 60px;
+
+                    strong {
+                        font-size: 17px;
+                    }
                 }
             }
         }
@@ -248,14 +270,14 @@
             padding: 50px;
 
             h2 {
-                font: bold 25px/1 'Noto Sans KR';
+                font: bold 25px/1 'Open Sans';
                 color: #222;
                 margin-bottom: 20px;
             }
 
             ul {
                 li {
-                    font: 17px/1.5 'Noto Sans KR';
+                    font: 15px/1.5 'Noto Sans KR';
                     font-weight: 300;
                     color: #333;
                     margin-bottom: 5px;
@@ -312,7 +334,7 @@
         .txt {
             >h2 {
                 padding-top: 100px;
-                font: 40px/1 'Noto Sans KR';
+                font: 35px/1 'Noto Sans KR';
                 font-weight: 600;
                 text-align: center;
                 color: #111;
@@ -321,7 +343,7 @@
             }
     
             >p {
-                font: 20px/1 'Noto Sans KR';
+                font: 18px/1 'Noto Sans KR';
                 color: #555;
                 text-align: center;
                 margin-bottom: 100px;
@@ -365,7 +387,7 @@
                 }
 
                 p {
-                    font: 17px/1.5 'Noto Sans KR';
+                    font: 15px/1.5 'Noto Sans KR';
                     color: #444;
 
                     &:nth-of-type(1) {
@@ -374,7 +396,7 @@
 
                     &:nth-of-type(2),
                     &:nth-of-type(3) {
-                        font: 15px/1.5 'Noto Sans KR';
+                        font: 14px/1.5 'Noto Sans KR';
                         font-weight: 300;
                         color: #666;
                     }
@@ -413,7 +435,7 @@
                             margin-right: 20px;
 
                             a {
-                                font: 17px/1 'Open Sans';
+                                font: 15px/1 'Open Sans';
                                 color: #0066cc;
 
                                 &:hover {
@@ -426,7 +448,7 @@
                             display: inline-block;
 
                             a {
-                                font: 17px/1 'Open Sans';
+                                font: 15px/1 'Open Sans';
                                 color: #0066cc;
 
                                 &:hover {
@@ -462,7 +484,7 @@
                 }
 
                 p {
-                    font: 17px/1.5 'Noto Sans KR';
+                    font: 15px/1.5 'Noto Sans KR';
                     color: #444;
 
                     &:nth-of-type(1) {
@@ -471,7 +493,7 @@
 
                     &:nth-of-type(2),
                     &:nth-of-type(3) {
-                        font: 15px/1.5 'Noto Sans KR';
+                        font: 14px/1.5 'Noto Sans KR';
                         font-weight: 300;
                         color: #666;
                     }
@@ -547,7 +569,7 @@
                 }
 
                 p {
-                    font: 17px/1.5 'Noto Sans KR';
+                    font: 15px/1.5 'Noto Sans KR';
                     color: #444;
                     
                     &:nth-of-type(1) {
@@ -556,7 +578,7 @@
 
                     &:nth-of-type(2),
                     &:nth-of-type(3) {
-                        font: 15px/1.5 'Noto Sans KR';
+                        font: 14px/1.5 'Noto Sans KR';
                         font-weight: 300;
                         color: #666;
                     }

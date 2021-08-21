@@ -1,5 +1,6 @@
 // scroll 모션
 
+var $menu = $(".gnb li")
 var $btns = $("#navi li"); 
 var $boxs = $(".myScroll"); 
 var len = $btns.length; 
@@ -10,10 +11,16 @@ setPos();
 
 $(window).on("resize", setPos);
 
+$menu.children("a").on("click", function(e){
+    e.preventDefault();
+    menu_moveScroll(this);
+});
+
 $btns.children("a").on("click", function(e){
     e.preventDefault(); 
     moveScroll(this);      
 });
+
 
 $(window).on("scroll", function(){
     var scroll = $(this).scrollTop(); 
@@ -48,6 +55,17 @@ function moveScroll(el){
          scrollTop: targetPos
      }, 1000); 
 }
+
+function menu_moveScroll(el){
+    var target = $(el).attr("href");
+    var targetPos = $(target).offset().top; 
+ 
+     $("html, body").animate({
+         scrollTop: targetPos
+     }, 1000); 
+}
+
+
 
 
 // btnCall

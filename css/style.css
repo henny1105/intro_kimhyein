@@ -35,31 +35,33 @@ button {
   opacity: 0; }
 
 #header {
-  width: 100%; }
+  width: 100%;
+  background: #efefef65; }
   #header .inner {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 40px 120px 30px;
+    padding: 20px 120px 20px;
     margin: 0 auto; }
     #header .inner h1 {
       display: inline-block; }
       #header .inner h1 a {
-        font: bold 30px/1 'Noto Serif KR';
-        font-weight: 600;
+        font: 25px/1 'Open Sans';
+        font-weight: 700;
         color: #111; }
-    #header .inner .menuWeb .gnb {
-      float: right; }
-      #header .inner .menuWeb .gnb li {
-        float: left;
-        margin-right: 40px; }
-        #header .inner .menuWeb .gnb li:last-child {
-          margin-right: 0; }
-        #header .inner .menuWeb .gnb li a {
-          font: 18px/1 'Montserrat';
-          font-weight: 600;
-          color: #111; }
+    #header .inner .menuWeb .gnb li {
+      float: left;
+      margin-right: 40px; }
+      #header .inner .menuWeb .gnb li:last-child {
+        margin-right: 0; }
+      #header .inner .menuWeb .gnb li a {
+        font: 15px/1 'Montserrat';
+        font-weight: 600;
+        color: #111;
+        transition: 0.5s; }
+        #header .inner .menuWeb .gnb li a:hover {
+          color: #b3aaa3; }
     #header .inner .menuWeb .btn_content {
       position: absolute;
       right: 26px;
@@ -147,38 +149,51 @@ button {
       #header .inner .menuMo.on {
         left: 0%; }
 
-#home .inner {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  flex-direction: row; }
-  #home .inner .left {
-    width: 50%;
-    height: 500px; }
-    #home .inner .left .pic {
-      width: 100%;
-      height: 100%;
-      background: url(../img/bg3.jpg) no-repeat center/cover;
-      object-fit: cover; }
-  #home .inner .right {
-    width: 50%;
-    height: 500px;
-    background: #efefef;
-    object-fit: cover;
-    padding: 80px; }
-    #home .inner .right .txt {
-      position: relative;
-      z-index: 3; }
-      #home .inner .right .txt span {
-        font: 40px/1.3 'Noto Sans KR';
-        color: #111; }
-        #home .inner .right .txt span strong {
-          font-size: 45px; }
-      #home .inner .right .txt p {
-        font: 16px/1.5 'Noto Sans KR';
-        font-weight: 300;
-        color: #222;
-        margin-top: 60px; }
+#home {
+  border-top: 1px solid #eee; }
+  #home .inner {
+    display: flex;
+    flex-direction: row; }
+    #home .inner .left {
+      width: 50%;
+      height: 500px; }
+      #home .inner .left .pic {
+        width: 100%;
+        height: 100%;
+        background: url(../img/bg3.jpg) no-repeat center/cover;
+        object-fit: cover; }
+    #home .inner .right {
+      width: 50%;
+      height: 500px;
+      object-fit: cover;
+      padding: 80px;
+      background: url(../img/bg4.jpg) no-repeat center/cover;
+      position: relative; }
+      #home .inner .right::after {
+        display: block;
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        background-color: rgba(251, 251, 251, 0.92); }
+      #home .inner .right .txt {
+        position: relative;
+        z-index: 3; }
+        #home .inner .right .txt span {
+          font: 40px/1.3 'Noto Sans KR';
+          color: #111; }
+          #home .inner .right .txt span strong {
+            font-size: 45px; }
+        #home .inner .right .txt p {
+          font: 15px/1.5 'Noto Sans KR';
+          font-weight: 300;
+          color: #222;
+          margin-top: 60px; }
+          #home .inner .right .txt p strong {
+            font-size: 17px; }
 
 #about {
   width: 100%;
@@ -203,11 +218,11 @@ button {
       width: 65%;
       padding: 50px; }
       #about .inner .right h2 {
-        font: bold 25px/1 'Noto Sans KR';
+        font: bold 25px/1 'Open Sans';
         color: #222;
         margin-bottom: 20px; }
       #about .inner .right ul li {
-        font: 17px/1.5 'Noto Sans KR';
+        font: 15px/1.5 'Noto Sans KR';
         font-weight: 300;
         color: #333;
         margin-bottom: 5px; }
@@ -242,14 +257,14 @@ button {
     flex-direction: column; }
     #portfolio .inner .txt > h2 {
       padding-top: 100px;
-      font: 40px/1 'Noto Sans KR';
+      font: 35px/1 'Noto Sans KR';
       font-weight: 600;
       text-align: center;
       color: #111;
       letter-spacing: 2px;
       margin-bottom: 20px; }
     #portfolio .inner .txt > p {
-      font: 20px/1 'Noto Sans KR';
+      font: 18px/1 'Noto Sans KR';
       color: #555;
       text-align: center;
       margin-bottom: 100px; }
@@ -279,12 +294,12 @@ button {
           margin-bottom: 40px;
           margin-top: 20px; }
         #portfolio .inner .content1 .right p {
-          font: 17px/1.5 'Noto Sans KR';
+          font: 15px/1.5 'Noto Sans KR';
           color: #444; }
           #portfolio .inner .content1 .right p:nth-of-type(1) {
             margin-bottom: 15px; }
           #portfolio .inner .content1 .right p:nth-of-type(2), #portfolio .inner .content1 .right p:nth-of-type(3) {
-            font: 15px/1.5 'Noto Sans KR';
+            font: 14px/1.5 'Noto Sans KR';
             font-weight: 300;
             color: #666; }
         #portfolio .inner .content1 .right ul {
@@ -311,14 +326,14 @@ button {
               display: inline-block;
               margin-right: 20px; }
               #portfolio .inner .content1 .right ul li:nth-of-type(2) a {
-                font: 17px/1 'Open Sans';
+                font: 15px/1 'Open Sans';
                 color: #0066cc; }
                 #portfolio .inner .content1 .right ul li:nth-of-type(2) a:hover {
                   text-decoration: underline; }
             #portfolio .inner .content1 .right ul li:nth-of-type(3) {
               display: inline-block; }
               #portfolio .inner .content1 .right ul li:nth-of-type(3) a {
-                font: 17px/1 'Open Sans';
+                font: 15px/1 'Open Sans';
                 color: #0066cc; }
                 #portfolio .inner .content1 .right ul li:nth-of-type(3) a:hover {
                   text-decoration: underline; }
@@ -339,12 +354,12 @@ button {
           margin-bottom: 40px;
           margin-top: 20px; }
         #portfolio .inner .content2 .left p {
-          font: 17px/1.5 'Noto Sans KR';
+          font: 15px/1.5 'Noto Sans KR';
           color: #444; }
           #portfolio .inner .content2 .left p:nth-of-type(1) {
             margin-bottom: 15px; }
           #portfolio .inner .content2 .left p:nth-of-type(2), #portfolio .inner .content2 .left p:nth-of-type(3) {
-            font: 15px/1.5 'Noto Sans KR';
+            font: 14px/1.5 'Noto Sans KR';
             font-weight: 300;
             color: #666; }
         #portfolio .inner .content2 .left a {
@@ -397,12 +412,12 @@ button {
           margin-bottom: 40px;
           margin-top: 20px; }
         #portfolio .inner .content3 .right p {
-          font: 17px/1.5 'Noto Sans KR';
+          font: 15px/1.5 'Noto Sans KR';
           color: #444; }
           #portfolio .inner .content3 .right p:nth-of-type(1) {
             margin-bottom: 15px; }
           #portfolio .inner .content3 .right p:nth-of-type(2), #portfolio .inner .content3 .right p:nth-of-type(3) {
-            font: 15px/1.5 'Noto Sans KR';
+            font: 14px/1.5 'Noto Sans KR';
             font-weight: 300;
             color: #666; }
         #portfolio .inner .content3 .right a {
